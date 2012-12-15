@@ -84,6 +84,8 @@ $install_time = (empty($install_time)) ? 0 : $install_time;
 $license = $parser->get_modx_license();
 $license = (empty($license)) ? 'http://opensource.org/licenses/gpl-license.php GNU General Public License v2' : $license;
 
+$github = $parser->get_modx_github();
+
 $version = $parser->get_modx_mod_version();
 $target = $parser->get_modx_target_version();
 
@@ -470,6 +472,7 @@ $template->assign_vars(array(
 
 	'LANG_SELECT' => lang_select(),
 	'LICENSE' => (!empty($license)) ? $license : 'http://opensource.org/licenses/gpl-license.php GNU General Public License v2',
+	'GITHUB' => $github,
 
 	'MOD_VERSION' => (isset($version)) ? $version : '',
 

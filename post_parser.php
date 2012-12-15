@@ -56,6 +56,7 @@ class post_parser extends parser_outdata
 		$this->installation_time = (isset($post_data['install-time'])) ? intval(trim($post_data['install-time'])) : 0;
 		$this->installation_time = (!empty($this->installation_time)) ? $this->installation_time * 60 : 0;
 		$this->license = (isset($post_data['license'])) ? stripslashes(trim($post_data['license'])) : '';
+		$this->github = (isset($post_data['github'])) ? stripslashes(trim($post_data['github'])) : '';
 		$this->php_installer = (isset($post_data['php-installer'])) ? stripslashes(trim($post_data['php-installer'])) : '';
 
 		// Arrays

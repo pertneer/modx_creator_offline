@@ -132,6 +132,10 @@ class mod_parser extends parser_outdata
 							$this->license = trim(preg_replace(array('/##/', '/License/', '/:/'), '', $data, 1));
 						break;
 
+						case (strpos(substr($data, 0, 12), 'github') !== false && empty($this->github)):
+							$this->github = trim(preg_replace(array('/##/', '/github/', '/:/'), '', $data, 1));
+						break;
+
 						default:
 							continue;
 						break;

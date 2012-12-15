@@ -26,6 +26,7 @@ class parser_outdata
 	protected $installation_level = '';
 	protected $installation_time = '';
 	protected $license = '';
+	protected $github = '';
 	protected $mod_version = '';
 	protected $modx_version = '';
 	protected $php_installer = '';
@@ -124,6 +125,17 @@ class parser_outdata
 	public function get_modx_license()
 	{
 		return($this->license);
+	}
+
+	/**
+	 * get_modx_github
+	 *
+	 * Get the github link for the MOD
+	 * @return string github
+	 */
+	public function get_modx_github()
+	{
+		return($this->github);
 	}
 
 	/**
