@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- MODX by the phpBB MOD Team XSL file v1.2.4 copyright 2005-2010 the phpBB MOD Team.
+<!-- MODX by the phpBB MOD Team XSL file v1.2.6 copyright 2005-2010 the phpBB MOD Team.
 	This file is released under the GNU GPL version 2.  See license.txt.
 	$Id: modx.prosilver.en.xsl 211 2010-02-27 20:05:11Z tumba25 $ -->
 <!DOCTYPE xsl:stylesheet[
 	<!ENTITY nbsp "&#160;">
 ]>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0" xmlns:mod="https://www.phpbb.com/mods/xml/modx-1.2.6-RC1.xsd">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0" xmlns:mod="https://www.phpbb.com/mods/xml/modx-1.2.6.xsd">
 	<xsl:output method="html" omit-xml-declaration="no" indent="yes" />
 	<xsl:variable name="title" select="mod:mod/mod:header/mod:title" />
 	<xsl:variable name="version">
